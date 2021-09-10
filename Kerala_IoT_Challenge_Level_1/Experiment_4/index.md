@@ -1,23 +1,29 @@
-# Tutorial for Java
+# Experiment No 4
 
-Are you new to Java? Let's start with a very simple HelloWorld.
+# Button Controlled LED
 
-Open your favorite text edtitor, name it as **HelloJava.java** and copy-and-paste the following content.
+<h3>Code</h3>
 
-```java
-public class HelloJava {
-
-  public static void main(String[] args) {
-     System.out.println("Hello, Java!");
-  }
+```arduino
+int ledpin=11;// initialize pin 11
+int inpin=7;// initialize pin 7
+int val;// define val
+void setup()
+{
+pinMode(ledpin,OUTPUT);// set LED pin as “output”
+pinMode(inpin,INPUT);// set button pin as “input”
+}
+void loop()
+{
+val=digitalRead(inpin);// read the level value of pin 7 and assign if to val
+if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+{ digitalWrite(ledpin,LOW);}
+else
+{ digitalWrite(ledpin,HIGH);}
 }
 ```
 
-You need to have Java SDK first. Once you have that, run the following commands in sequence.
+<h3>Circuit Diagram</h3>
 
-```bash
-javac HelloJava.java
-java HelloJava
-```
+![Circuit Diagram](./circuit.png)
 
-Now, you should see "Hello, World" printed out in the console!
