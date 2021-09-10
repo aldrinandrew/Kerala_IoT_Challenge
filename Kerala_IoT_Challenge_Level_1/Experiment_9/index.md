@@ -1,23 +1,29 @@
-# Tutorial for Java
+# Experiment No 9
 
-Are you new to Java? Let's start with a very simple HelloWorld.
+# LM35 Temperature Sensor
 
-Open your favorite text edtitor, name it as **HelloJava.java** and copy-and-paste the following content.
+<h3>Code</h3>
 
-```java
-public class HelloJava {
-
-  public static void main(String[] args) {
-     System.out.println("Hello, Java!");
-  }
+```arduino
+int potPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+void setup()
+{
+Serial.begin(9600);// set baud rate at”9600”
+}
+void loop()
+{
+int val;// define variable
+int dat;// define variable
+val=analogRead(0);// read the analog value of the sensor and assign it to val
+dat=(125*val)>>8;// temperature calculation formula
+Serial.print("Tep");// output and display characters beginning with Tep
+Serial.print(dat);// output and display value of dat
+Serial.println("C");// display “C” characters
+delay(500);// wait for 0.5 second
 }
 ```
 
-You need to have Java SDK first. Once you have that, run the following commands in sequence.
+<h3>Circuit Diagram</h3>
 
-```bash
-javac HelloJava.java
-java HelloJava
-```
+![Circuit Diagram](./circuit.png)
 
-Now, you should see "Hello, World" printed out in the console!
