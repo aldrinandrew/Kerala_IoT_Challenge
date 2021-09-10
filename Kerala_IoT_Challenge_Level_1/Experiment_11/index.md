@@ -1,23 +1,30 @@
-# Tutorial for Java
+# Experiment No 11
 
-Are you new to Java? Let's start with a very simple HelloWorld.
+# Potentiometer analog Value Reading
 
-Open your favorite text edtitor, name it as **HelloJava.java** and copy-and-paste the following content.
+<h3>Code</h3>
 
-```java
-public class HelloJava {
-
-  public static void main(String[] args) {
-     System.out.println("Hello, Java!");
-  }
+```arduino
+int potpin=0;// initialize analog pin 0
+int ledpin=13;// initialize digital pin 13
+int val=0;// define val, assign initial value 0
+void setup()
+{
+pinMode(ledpin,OUTPUT);// set digital pin as “output”
+Serial.begin(9600);// set baud rate at 9600
+}
+void loop()
+{
+digitalWrite(ledpin,HIGH);// turn on the LED on pin 13
+delay(50);// wait for 0.05 second
+digitalWrite(ledpin,LOW);// turn off the LED on pin 13
+delay(50);// wait for 0.05 second
+val=analogRead(potpin);// read the analog value of analog pin 0, and assign it to val 
+Serial.println(val);// display val’s value
 }
 ```
 
-You need to have Java SDK first. Once you have that, run the following commands in sequence.
+<h3>Circuit Diagram</h3>
 
-```bash
-javac HelloJava.java
-java HelloJava
-```
+![Circuit Diagram](./circuit.png)
 
-Now, you should see "Hello, World" printed out in the console!
