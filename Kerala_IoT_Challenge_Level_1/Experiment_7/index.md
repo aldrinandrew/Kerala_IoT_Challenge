@@ -1,23 +1,28 @@
-# Tutorial for Java
+# Experiment No 7
 
-Are you new to Java? Let's start with a very simple HelloWorld.
+# LDR Light Sensor
 
-Open your favorite text edtitor, name it as **HelloJava.java** and copy-and-paste the following content.
+<h3>Code</h3>
 
-```java
-public class HelloJava {
-
-  public static void main(String[] args) {
-     System.out.println("Hello, Java!");
-  }
+```arduino
+int potpin=0;// initialize analog pin 0, connected with photovaristor
+int ledpin=11;// initialize digital pin 11, 
+int val=0;// initialize variable val
+void setup()
+{
+pinMode(ledpin,OUTPUT);// set digital pin 11 as “output”
+Serial.begin(9600);// set baud rate at “9600”
+}
+void loop()
+{
+val=analogRead(potpin);// read the value of the sensor and assign it to val
+Serial.println(val);// display the value of val
+analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
+delay(10);// wait for 0.01 
 }
 ```
 
-You need to have Java SDK first. Once you have that, run the following commands in sequence.
+<h3>Circuit Diagram</h3>
 
-```bash
-javac HelloJava.java
-java HelloJava
-```
+![Circuit Diagram](./circuit.png)
 
-Now, you should see "Hello, World" printed out in the console!
