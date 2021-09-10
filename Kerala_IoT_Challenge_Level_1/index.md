@@ -1,8 +1,12 @@
 
-# Tutorials for every technologist
+# Kerala IoT Chalenge- Level 1
 
-Learn about all these great technologies:
+![Kerala Iot Challenge](./images/iot.png)
 
-[Tomcat](./tomcat/index.md)
-[Cloud](./cloud/index.md)
-[Java](./java/index.md)
+<h3>Level 1 Details</h3>
+
+![Kerala Iot Challenge](./images/level_1.png)
+
+<h3>Components Required</h3>
+
+![Kerala Iot Challenge](./images/kit.png)
