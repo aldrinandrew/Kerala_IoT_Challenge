@@ -1,23 +1,22 @@
-# Tutorial for Java
+# Experiment No 5
 
-Are you new to Java? Let's start with a very simple HelloWorld.
+# Buzzer
 
-Open your favorite text edtitor, name it as **HelloJava.java** and copy-and-paste the following content.
+<h3>Code</h3>
 
-```java
-public class HelloJava {
-
-  public static void main(String[] args) {
-     System.out.println("Hello, Java!");
-  }
+```arduino
+int buzzer=8;// initialize digital IO pin that controls the buzzer
+void setup() 
+{ 
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”
+} 
+void loop() 
+{
+digitalWrite(buzzer, HIGH); // produce sound
 }
 ```
 
-You need to have Java SDK first. Once you have that, run the following commands in sequence.
+<h3>Circuit Diagram</h3>
 
-```bash
-javac HelloJava.java
-java HelloJava
-```
+![Circuit Diagram](./circuit.png)
 
-Now, you should see "Hello, World" printed out in the console!
