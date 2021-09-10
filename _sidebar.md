@@ -5,7 +5,7 @@
 
 * [About](./about/index)
 
-* [Kerala IoT Challenge- Level 1](./tutorials/index)
+* [Kerala IoT Challenge- Level 1](./Kerala_IoT_Challenge_Level_1/index)
   * [Experiment 1](./Kerala_IoT_Challenge_Level_1/Experiment_1/index)
   * [Experiment 2](./Kerala_IoT_Challenge_Level_1/Experiment_2/index)
   * [Experiment 3](./Kerala_IoT_Challenge_Level_1/Experiment_3/index)
