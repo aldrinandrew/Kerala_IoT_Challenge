@@ -18,5 +18,5 @@ digitalWrite(ledPin, LOW); // set the LED off.
 delay(1000); // wait for a second
 }
 ```
-
+![Circuit Diagram](./circuit.png)
 
