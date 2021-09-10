@@ -4,4 +4,4 @@ I am [**Aldrin Andrew**](https://aldrinandrew.me/), final year Electronics an Co
 
 This page is created to track my journey in Kerala Iot Challenge jointly organzed by GTECH MueLearn and FoxLabs.It was a great experience to start with the basics of microcontroller Ardunio as a Level 1.
 
-![Kerala Iot Challenge](./images/kerala_iot_challenge.png)
+![Kerala Iot Challenge](./images/kerala_iot_challenge.png height = "100px" width = "150px")
