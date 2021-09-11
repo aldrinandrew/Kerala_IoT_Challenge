@@ -114,5 +114,5 @@ void loop() {
 
 Circuit Diagram
 
-![Circuit Diagram](./circuit.png)
+![Circuit Diagram](./circuitpng.png)
 
