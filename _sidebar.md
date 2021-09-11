@@ -18,6 +18,8 @@
   * [Experiment 10](./Kerala_IoT_Challenge_Level_1/Experiment_10/index)
   * [Experiment 11](./Kerala_IoT_Challenge_Level_1/Experiment_11/index)
   * [Experiment 12](./Kerala_IoT_Challenge_Level_1/Experiment_12/index)
+  * [Assignment 1](./Kerala_IoT_Challenge_Level_1/Assignment_1/index)
+  * [Assignment 2](./Kerala_IoT_Challenge_Level_1/Assignment_2/index)
 
 * [Contact](./contact/index)
 
