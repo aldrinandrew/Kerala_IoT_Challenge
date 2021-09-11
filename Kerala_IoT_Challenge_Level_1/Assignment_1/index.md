@@ -1,21 +1,37 @@
-# Experiment No- 1
+# Assignment No- 1
 
-# Hello World LED Blinking
+# Create an automatic night lamp model using LDR and LED
 
 Code
 
 ```arduino
-int ledPin = 10; // define digital pin 10.
-void setup()
-{
-pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+const int relayPin = 13;  
+const int ldrPin = A0;  
+
+
+void setup() {
+
+  Serial.begin(9600);
+  pinMode(relayPin, OUTPUT); 
+  pinMode(ldrPin, INPUT);   
 }
-void loop()
-{
-digitalWrite(ledPin, HIGH); // set the LED on.
-delay(1000); // wait for a second.
-digitalWrite(ledPin, LOW); // set the LED off.
-delay(1000); // wait for a second
+
+void loop() {
+
+  int ldrStatus = analogRead(ldrPin);  
+  
+
+   if (ldrStatus <=400) {
+
+    digitalWrite(relayPin, LOW);               
+    Serial.println("LDR is DARK, LED is ON");
+    
+   }
+  else {
+
+    digitalWrite(relayPin, HIGH);         
+    Serial.println("---------------");
+  }
 }
 ```
 
